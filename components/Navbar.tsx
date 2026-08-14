@@ -40,7 +40,7 @@ export default function Navbar() {
             <div className="nav-container">
 
                 <Link href="/" className="logo">
-                    ROBOT SHOP
+                    nammon
                 </Link>
 
                 <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
