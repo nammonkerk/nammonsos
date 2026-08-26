@@ -1,21 +1,12 @@
-import { NextResponse } from "next/server";
-import { connectDB } from "@/lib/mongodb";
-import Blog from "@/models/Blog";
+import mongoose from "mongoose";
 
-export async function GET() {
-  try {
-    await connectDB();
-
-
-const  BlogSchema = new mongoose.Schema(
+const BlogSchema = new mongoose.Schema(
   {
-    title:String,
-    slug:String,
-    content: String
-
-
+    title: String,
+    slug: String,
+    content: String,
   },
   { timestamps: true }
 );
 
-export default mongoose.models.User || mongoose.model("Blog",BlogSchema);
+export default mongoose.models.Blog || mongoose.model("Blog", BlogSchema);
