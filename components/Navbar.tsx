@@ -55,7 +55,10 @@ export default function Navbar() {
                         <Link href="/about">About</Link>
                     </li>
                     <li>
-                        <Link href="/contact">Contact</Link>
+                        <Link href="/contact">เพิ่มประเภทสินค้า</Link>
+                    </li>
+                      <li>
+                        <Link href="/products">สินค้า</Link>
                     </li>
                       <li>
                         <Link href="/blogs">บทความ</Link>
@@ -73,10 +76,10 @@ export default function Navbar() {
                                 <Link href="/admin/blogs">เพิ่มบทความ</Link>
                             </li>
                             <li>
-                                <Link href="/admin/categories">Category</Link>
+                                <Link href="/admin/categories">หมวดหมู่</Link>
                             </li>
                             <li>
-                                <Link href="/admin/products">Product</Link>
+                                <Link href="/admin/products">เพิ่มสินค้าproducts</Link>
                             </li>
                         </>
                     )}
